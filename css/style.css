@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-panel {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+/* Show Modal */
+.modal.show .modal-dialog {
+    transform: translate(0px, 150px)!important;
+}
+/* 
+    Modal Form
+*/
+.navbar-nav {
+    display: flex!important;
+    gap: 10px!important;
+}
+.recept_service_type {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.recept_service_type_item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+    align-items: start;
+}
+.variant-selector {
+    width: 100%;
+    padding: 5px;
+    transition: all .6s ease;
+    appearance: none;
+}
+.variant-selector:focus {
+    border: 1px solid #01b9af;
+    box-shadow: 0 0 5px #3debb7;
+}
+.variant-selector:hover {
+    border: 1px solid #01b9af;
+}
+.navbar-nav {
+    align-items: center;
+}
+.date-time-btn {
+    border: none;
+    background: transparent;
+}
+.nav-link.active {
+    color: #014bb9!important;
+}
+.btn-secondary {
+    background: #289977!important;
+}
+.btn-secondary:hover {
+    background: #15c78c!important;
+}
+.patient-recept-data {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+.patient-recept-data-item {
+    grid-template-columns: repeat(2, 1fr);
+}
+.modal-content {
+    min-height: 365px!important;
+}
+.author-data {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+}
+.author-data p:last-child {
+    color: #c71529;
+}
+.credits {
+    border-top: 1px dashed #eee;
+}
+.header_menu_items {
+    display: flex;
+}
+.date-time-inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.date-time-date {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.date-time-date input {
+    width: 50%;
+}
+/* CLIENT PROFILE */
+.profile_wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+}
+.profile_header {
+    height: 130px;
+}
+.profile_header_top_panel {
+    height: 65px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+}
+.profile_header_top_panel_logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+.profile_header_top_panel_year {
+    float: left;
+    margin-left: 100px;
+    margin-top: 22px;
+}
+.profile_header_nav_panel_wrapper {
+    padding: 20px 15px;
+    padding-left: 140px;
+    background: #014bb9;
+    color: #fff;
+    box-shadow: 0 3px 6px 2px rgba(134, 133, 204,0.4);
+    position: relative;
+}
+.profile_header_nav_panel_logo {
+    position: absolute;
+    top: -45px;
+    left: 25px;
+}
+.profile_header_nav_panel {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.profile_header_nav_panel li {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+.profile_header_nav_panel li a {
+    font: 700 14px 'Rubik', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+#profile_content {
+    border-top: 10px solid #ccd2f3;
+    padding: 30px 25px;
+}
+.profile_content_login_wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+.profile_content_login_panel {
+    width: fit-content;
+    background: rgb(250, 250, 250);
+    box-shadow: 0 3px 6px 2px rgba(214, 214, 214, 0.4);
+    padding: 20px 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.profile_content_login_inputs form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile_register-form input:hover, .profile_login-form input:hover {
+    border-color: #15c78c50;
+    box-shadow: 0 0 5px #289977;
+}
+.profile_register-form input:focus, .profile_login-form input:focus {
+    border-color: #15c78c50;
+}
+.profile_register-form div, .profile_login-form div{
+    display: flex;
+    flex-direction: column;
+}
+.profile_register-form div input, .profile_login-form div input {
+    transition: all .6s ease;
+    width: 100%;
+    padding: 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+.profile_register-form div span, .profile_login-form div span {
+    color: red;
+}
+.main_page_btns_wrapper {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: end;
+    gap: 5px;
+}
+.user_profile_login_link, .user_enter_recept_link, .user_profile_link {
+    position: relative!important;
+    top: unset!important;
+    right: unset!important;
+}
+.user_profile_link {
+    font-size: 14px!important;
+    padding: 15px 20px!important;
+}
+.user_profile_link:hover {
+    color: rgb(47,47,47)!important;
+}
+/* 
+    USER PROFILE
+*/
+.profile_content_login_wrapper h4 {
+    margin-bottom: 10px;
+}
+.profile_content_title {
+    margin-bottom: 20px;
+}
+.profile_data_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.profile_data_wrapper hr {
+    width: 100%;
+    background: #014bb9;
+    height: 2px;
+}
+.profile_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.profile_data_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.profile-personal-edit-link {
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    color: #014bb9;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    align-self: center;
+}
+.profile_data_inputs_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.profile_data_inputs {
+    padding: 0 5px;
+    border: 1px solid #9ba9f563;
+}
+/* Table */
+.profile_recepts {
+    text-align: center;
+}
+.profile_recepts h4 {
+    margin-bottom: 20px;
+}
+.profile_recepts_table * {
+    text-align: center;
+}
+.recepts_table_header * {
+    background: #014bb91e;
+    padding: 10px;
+    font-weight: 500;
+}
+.recepts_table_header th:nth-child(odd) {
+    background: #9ba9f563;
+    margin-right: 10px;
+}
+.recepts_table_body * {
+    border: 1px solid #014bb91e;
+    border-top: none;
+    padding: 10px;
+    font-style: italic;
+}
+.recepts_table_body th:nth-child(odd) {
+    border: 1px solid #9ba9f563;
+    border-top: none;
+}
